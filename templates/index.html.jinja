@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LU FITNESS</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fff; /* White background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      position: relative;
+    }
+    .background-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('img/dumbbells image.jpeg'); /* New background image */
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+    }
+    .main-content {
+      text-align: center ;
+    }
+    h1 {
+      font-family: 'Arial Black', sans-serif;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+    .circle-button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 130px;
+      height: 130px;
+      border: 4px solid black;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+      transition: transform 0.2s;
+    }
+    .circle-button:hover {
+      transform: scale(1.1); /* Slight zoom effect */
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-pattern"></div>
+  <div class="main-content">
+    <h1>LU FITNESS</h1>
+    <a href="login.html" class="circle-button mt-5">
+        Let's Workout
+    </a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{% from "partials/cards.jinja" import btn %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LU FITNESS</title>
+  <style>
+      body {
+          margin: 0;
+          padding: 0;
+          background-image: url("img/Annotation 2024-12-31 132909.png");
+          background-position: -20px -30px; /* Move the background slightly up and left */
+          background-size: cover;
+          display: flex;
+          height: 65vh; /* Maintain the 65vh height for your background */
+      }
+      h2 {
+        color: #050550;
+        font-size: 28px; /* Adjust the font size as needed */
+        font-family: Arial, sans-serif; /* Text style */
+        text-align: center;
+        margin-top: 20px; /* Add some spacing from the top */
+      }
+       .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-grow: 1;
+        }
+      .btn-next {
+            background-color: black;
+            color: white;
+            font-size: 1rem;
+            padding: 10px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            text-decoration: none;
+            margin: 0 auto;
+            display: block;
+        }
+        .btn-next:hover {
+            background-color: #333;
+        }
+
+       .footer {
+            width: 100%;
+            position: fixed;
+            bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Your character is ready!</h2>
+        <div class="footer">
+            {{ btn('Next', 'Welcome.html') }}
+        </div>
+    </div>
+</body>
+</html>
+
+

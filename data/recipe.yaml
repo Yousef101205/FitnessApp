@@ -1,0 +1,19 @@
+recipes:
+  - recipe_name: "Spaghetti Carbonara"
+    Ingredients:
+      - "Spaghetti"
+      - "Eggs"
+      - "Pancetta"
+      - "Parmesan"
+  - recipe_name: "Salad"
+    Ingredients:
+      - "Cucumber"
+      - "Lettuce"
+      - "Tomato"
+      - "Salmon"
+  - recipe_name: "Soup"
+    Ingredients:
+      - "Tomato"
+      - "Water"
+      - "Salt"
+      - "Blackpepper"

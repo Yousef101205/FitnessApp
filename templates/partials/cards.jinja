@@ -1,0 +1,14 @@
+<!-- btn template -->
+{% macro btn(body, link) %}
+<a href="{{ link }}" class="btn btn-next">
+    {{ body }}
+</a>
+{% endmacro %}
+
+<!-- card template -->
+{% macro mycard(body, card_class) %}
+<div class="card {{ card_class }}">
+    <div class="card-body">{{ body }}</div>
+</div>
+{% endmacro %}
+

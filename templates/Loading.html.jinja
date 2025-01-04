@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LU FITNESS</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('img/dumbbells image.jpeg') center center / cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .loading-container {
+      text-align: center;
+      color: #2a2a2a;
+      font-family: Arial, sans-serif;
+      transform: translateY(-80px); /* Slight upward position */
+    }
+
+    .loader {
+        border: 16px solid #000000;
+        border-radius: 50%;
+        border-top: 16px solid #fff;
+        width: 30px;
+        height: 30px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+        margin: 0 auto; /* Center the loader */
+    }
+
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .message {
+      font-size: 24px;
+      font-weight: bold;
+      color: #050550;
+      margin-top: 15px; /* Add a little space below the loader */
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-container">
+      <div class="loader"></div>
+      <div class="message">Creating your character...</div>
+  </div>
+  <script>
+    setTimeout(() => {
+      window.location.href = "Ready.html";
+    }, 3000); // 3-second delay for fake processing
+  </script>
+</body>
+</html>
+
