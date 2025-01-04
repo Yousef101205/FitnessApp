@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LU FITNESS</title>
+    <!-- Bootstrap CSS -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+
+        }
+
+        .vertical-navbar {
+            width: 80px; /* Adjust as needed */
+            background-color: #1414d3;
+            padding: 10px 0;
+            height: 100vh; /* Full height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly; /* Evenly space items */
+            align-items: center;
+        }
+
+        .vertical-navbar a {
+            text-decoration: none;
+            color: white;
+            writing-mode: vertical-rl; /* Makes text vertical */
+            transform: rotate(180deg); /* Rotates text for proper orientation */
+            background-color: #1414d3; /* Matches the blue circle styling */
+            padding: 10px;
+            font-size: 24px;
+            text-align: center;
+            width: 50px; /* Width of the circle button */
+            height: 50px; /* Height of the circle button */
+            border-radius: 50%; /* Makes the button circular */
+            line-height: 50px; /* Vertically aligns text */
+            transition: all 0.3s ease; /* Smooth transitions */
+        }
+
+        .vertical-navbar a:hover {
+            width: 100px; /* Enlarges the button */
+            height: 70px; /* Maintains circular shape */
+            line-height: 70px; /* Adjusts line height for centering */
+            background-color: #1414d3; /* Darker blue on hover */
+            color: #ffffff; /* Keeps text white */
+        }
+
+        .container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #050550;
+            position: relative;
+        }
+
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: -20px; /* Adjust distance from the text */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px; /* Width of the shadow */
+            height: 15px; /* Height of the shadow */
+            background: rgba(0, 0, 0, 0.3); /* Shadow color and transparency */
+            border-radius: 50%; /* Makes the shadow oval */
+            filter: blur(3px); /* Adds blurriness to the shadow */
+            z-index: -1; /* Places shadow below the text */
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 72px;
+            margin-top: 25px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border: 4px solid #000000;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card img {
+            width: 90%;
+        }
+
+        .footer-image {
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="vertical-navbar">
+        <a href="FACE.html">FACE</a>
+        <a href="HAIR.html">HAIR</a>
+        <a href="SHIRT.html">SHIRT</a>
+        <a href="PANTS.html">PANTS</a>
+    </div>
+    <div class="container">
+        <div class="title">Create Yourself</div>
+        <div class="card-container">
+            <div class="card">
+                <a href="PANTS.html">
+                    <img src="img/an-anime-style-shirt-with-a-bow-tie-png.webp" alt="Shirt 1">
+                </a>
+            </div>
+            <div class="card">
+                <a href="PANTS.html">
+                    <img src="img/a-white-shirt-with-a-black-collar-png.webp" alt="Shirt 2">
+                </a>
+            </div>
+            <div class="card">
+                <a href="PANTS.html">
+                    <img src="img/aratilis-flat-colors-cartoon-png.webp" alt="Shirt 3">
+                </a>
+            </div>
+            <div class="card">
+                <a href="PANTS.html">
+                    <img src="img/vecteezy_naruto-t-shirt-naruto-generative-ai_47300522.png" alt="Shirt 4">
+                </a>
+            </div>
+        </div>
+    </div>
+  
+    <img class="footer-image" src="https://i.postimg.cc/TwBFPkGt/vecteezy-ai-generated-male-anime-characters-png-transparent-background-35916307.png" alt="Footer Character">
+</body>
+</html>
